@@ -30,12 +30,12 @@ public class ExchangeRate {
          * пока что сделаю решение "в лоб" (с) так говорил мой математик :) */
         HashMap<Integer, Double> allCodes = new HashMap<>();
 
-        allCodes.put(810840, 0.01343); // 810 -> 840
-        allCodes.put(810978, 0.012032); // 810 -> 978
-        allCodes.put(840810, 73.64); // 840 -> 810
-        allCodes.put(840978, 0.8855); // 840 -> 978
-        allCodes.put(978810, 83.04); // 978 -> 810
-        allCodes.put(978840, 1.13); // 978 -> 840
+        allCodes.put(810_840, 0.01343); // 810 -> 840
+        allCodes.put(810_978, 0.012032); // 810 -> 978
+        allCodes.put(840_810, 73.64); // 840 -> 810
+        allCodes.put(840_978, 0.8855); // 840 -> 978
+        allCodes.put(978_810, 83.04); // 978 -> 810
+        allCodes.put(978_840, 1.13); // 978 -> 840
 
         return allCodes;
     }
