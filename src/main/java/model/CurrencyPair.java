@@ -18,7 +18,7 @@ public class CurrencyPair {
         this.currencyToCode = currencyTo.getCode();
         this.currencyCode = currency.getCode();
 
-        // цифровые коды
+        // цифровые коды валют
         this.currencyToDigitalCode = currencyTo.getDigitalCode();
         this.currencyDigitalCode = currency.getDigitalCode();
     }
@@ -47,9 +47,10 @@ public class CurrencyPair {
         return currencyDigitalCode;
     }
 
+    // стыдно за это решение, но ничего лучше не придумал
     public String getPairCode() {
         return Integer.toString(getCurrencyToDigitalCode())
-                + Integer.toString(getCurrencyDigitalCode());
+                .concat(Integer.toString(getCurrencyDigitalCode()));
     }
 
 }
