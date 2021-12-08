@@ -1,22 +1,12 @@
-import currency.Dollar;
-import currency.Ruble;
+import model.Currency;
+import view.Output;
 
 public class Main {
-
     public static void main(String[] args) {
 
-        // 1 доллар в рубли
-        ExchangeRate dollarToRubles = new ExchangeRate("13.09.21",
-                new Dollar(),
-                new Ruble()
-        );
-        dollarToRubles.getCourse();
+        new Output().scoreboard(new Currency(840), new Currency(810));
 
-        // 1 рубль в доллары
-        ExchangeRate rubleToDollars = new ExchangeRate("13.09.21",
-                new Ruble(),
-                new Dollar()
-        );
-        rubleToDollars.getCourse();
+
     }
 }
+
